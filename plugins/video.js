@@ -31,7 +31,7 @@ const vid = search.videos[0]
 /* 🎨 Preview */
 
 const caption = `
-╔ஜ۩▒█ ᴀʀꜱʟᴀɴ X ᴍᴅ █▒۩ஜ╗
+╔ஜ۩▒█ Kaif x Chaudhary █▒۩ஜ╗
 ┃🎬 VIDEO FOUND
 ┃📌 Title: ${vid.title}
 ┃⏱️ Duration: ${vid.timestamp}
