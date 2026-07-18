@@ -29,7 +29,7 @@ async(conn, mek, m, { from, reply, myquoted }) => {
 
         // 3. Message Final Stylé
         const pingMsg = `
-*👑 AKaif-MD UPTIME 👑* ⚡
+*👑 Kaif-MD UPTIME 👑* ⚡
 
 * UPTIME :❯  ${latency}*
 
