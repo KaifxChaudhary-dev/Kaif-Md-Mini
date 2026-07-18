@@ -102,7 +102,7 @@ cmd({
 
         // 📦 Info box
         await sock.sendMessage(m.chat, {
-            image: { url: videoData.thumb || "https://files.catbox.moe/16i1l7.jpg" },
+            image: { url: videoData.thumb || "https://files.catbox.moe/qhcwb6.png" },
             caption: xBox(videoData)
         }, { quoted: fakevCard });
 
