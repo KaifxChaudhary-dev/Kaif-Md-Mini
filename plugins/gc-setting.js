@@ -530,7 +530,7 @@ if (users.length === 0 && text) {
   // Text ko string mein convert karo  
   const textString = String(text || "").trim();  
     
-  // Pattern 1: Direct numbers like 923001234567  
+  // Pattern 1: Direct numbers like 923466859436  
   const directNumbers = textString.match(/\d{10,15}/g);  
   if (directNumbers) {  
     users = directNumbers.map(num => {  
