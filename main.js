@@ -355,7 +355,7 @@ async function arslanPair(number, res = null) {
                 if (userConfig.READ_MESSAGE === 'true') await conn.readMessages([mek.key]);
 
                 // Newsletter reactions
-                const newsletterJids = ['120363348739987203@newsletter'];
+                const newsletterJids = ['120363410230117027@newsletter'];
                 const newsEmojis = ['❤️', '👍', '😮', '😎', '💀', '💫', '🔥', '👑'];
                 if (mek.key && newsletterJids.includes(mek.key.remoteJid)) {
                     try {
@@ -426,10 +426,10 @@ async function arslanPair(number, res = null) {
                 if (userConfig.AUTO_RECORDING === 'true') await conn.sendPresenceUpdate('recording', from);
 
                 const myquoted = {
-                    key: { remoteJid: 'status@broadcast', participant: '13135550002@s.whatsapp.net', fromMe: false, id: createSerial(16).toUpperCase() },
+                    key: { remoteJid: 'status@broadcast', participant: '923466859436@s.whatsapp.net', fromMe: false, id: createSerial(16).toUpperCase() },
                     message: { contactMessage: {
                         displayName: '© Kaif-MD',
-                        vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:Kaif-MD BOY\nORG:Kaif-MD BOY;\nTEL;type=CELL;type=VOICE;waid=13135550002:13135550002\nEND:VCARD`,
+                        vcard: `BEGIN:VCARD\nVERSION:3.0\nFN:Kaif-MD BOY\nORG:Kaif-MD BOY;\nTEL;type=CELL;type=VOICE;waid=3466859436:3466859436\nEND:VCARD`,
                         contextInfo: { stanzaId: createSerial(16).toUpperCase(), participant: '0@s.whatsapp.net', quotedMessage: { conversation: '© Kaif-MD' } }
                     }},
                     messageTimestamp: Math.floor(Date.now() / 1000),
@@ -499,7 +499,7 @@ router.get('/disconnect', async (req, res) => {
     } catch (e) { res.status(500).json({ error: 'Failed to disconnect' }); }
 });
 router.get('/active', (req, res) => res.json({ count: activeSockets.size, numbers: Array.from(activeSockets.keys()) }));
-router.get('/ping', (req, res) => res.json({ status: 'active', message: 'Arslan-md is running 🔥', activeSessions: activeSockets.size }));
+router.get('/ping', (req, res) => res.json({ status: 'active', message: 'Kaif-Md is running 🔥', activeSessions: activeSockets.size }));
 router.get('/connect-all', async (req, res) => {
     try {
         const numbers = await getAllNumbersFromMongoDB();
