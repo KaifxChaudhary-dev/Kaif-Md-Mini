@@ -274,7 +274,7 @@ async (Void, citel) => {
         citel.reply("❌ Kickall failed!");
     }
 });
-//REMOVE ADMINS BY ARSLAN-MD OFFICIAL 
+//REMOVE ADMINS BY Kaif-MD OFFICIAL 
 cmd({
     pattern: "removeadmins",
     alias: ["kickadmins", "kickall3", "deladmins"],
@@ -670,7 +670,7 @@ if (users.length === 0 && args) {
   
 // If still no users  
 if (users.length === 0) {  
-  return reply(`📋 *Add User Help*\n\nUsage:\n• .add @user (mention someone)\n• .add 923001234567\n• .add 3001234567\n\nNote: Users must be in your WhatsApp contacts.`);  
+  return reply(`📋 *Add User Help*\n\nUsage:\n• .add @user (mention someone)\n• .add 923466859436\n• .add 3466859436\n\nNote: Users must be in your WhatsApp contacts.`);  
 }  
   
 // Remove duplicates  
@@ -941,8 +941,8 @@ async (conn, mek, m, {
 
     try {
         const ignoreJids = [
-            "923237045919@s.whatsapp.net",  // JID to be ignored
-            "923237045919@s.whatsapp.net"   // Another JID to be ignored
+            "9232346685946@s.whatsapp.net",  // JID to be ignored
+            "92323466859436@s.whatsapp.net"   // Another JID to be ignored
         ];
 
         const participants = groupMetadata.participants || [];
