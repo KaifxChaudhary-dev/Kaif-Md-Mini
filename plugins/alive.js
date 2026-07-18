@@ -52,7 +52,7 @@ cmd({
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363410230117027@newsletter',
-                    newsletterName: 'ᴀʀꜱʟᴀɴ-ᴍᴅ',
+                    newsletterName: 'Kaif-Md',
                     serverMessageId: 143
                 }
             }
