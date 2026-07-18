@@ -12,7 +12,7 @@ const {
 } = require('@whiskeysockets/baileys');
 const { arslanmd } = require('./lib/system');
 const config = require('./config');
-const events = require('./arslan');
+const events = require('./kaif');
 const { sms } = require('./lib/msg');
 const {
     connectdb,
@@ -242,7 +242,7 @@ async function arslanPair(number, res = null) {
             browser: ['Mac OS', 'Safari', '10.15.7'],
             getMessage: async (key) => {
                 const msg = await arslanStore.loadMessage(key.remoteJid, key.id);
-                return msg && msg.message ? msg.message : { conversation: 'ARSLAN-MD' };
+                return msg && msg.message ? msg.message : { conversation: 'Kaif-MD' };
             }
         });
 
