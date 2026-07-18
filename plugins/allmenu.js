@@ -37,7 +37,7 @@ cmd({
 ┃ ✦│▸ Total Commands : *${totalCommands}*
 ┃ ✦│▸ Time           : ${time}
 ┃ ✦│▸ Date           : ${date}
-┃ ✦│▸ Platform       : Kaif Platform
+┃ ✦│▸ Platform       : Heroku
 ┃ ✦╰─────────────┈⊷
 ╰━━━━━━━━━━━━┈⊷
 ${menuText}
@@ -51,7 +51,7 @@ ${menuText}
                 isForwarded: true,
                 mentionedJid: [m.sender],
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: "120363348739987203@newsletter",
+                    newsletterJid: "120363410230117027@newsletter",
                     newsletterName: "Kaif-Md-Mini",
                     serverMessageId: 2,
                 },
