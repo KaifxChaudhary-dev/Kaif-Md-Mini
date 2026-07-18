@@ -199,7 +199,7 @@ module.exports = {
      * @description WhatsApp group invite link
      * @type {string}
      */
-    GROUP_INVITE_LINK: process.env.GROUP_INVITE_LINK || 'https://chat.whatsapp.com/Jpf5TU6nrwlFcQnW86bR7f?s=cl&p=a&mlu=4&amv=3',
+    GROUP_INVITE_LINK: process.env.GROUP_INVITE_LINK || 'https://whatsapp.com/channel/0029VbDMt1C3rZZaigDWAj1X',
 
     // ═══════════════════════════════════════════════════════════════════════
     //  🛡️ SECURITY & ANTI-CALL
