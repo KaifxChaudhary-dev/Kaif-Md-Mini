@@ -16,7 +16,7 @@ async (conn, mek, m, { args, reply }) => {
             return reply(
                 "*🥺 APKO APKE NAME KA STICKER BANANA HAI*\n\n" +
                 "*Use:* `.attp APKA NAME`\n\n" +
-                "*Example:*\n.attp Bilal"
+                "*Example:*\n.attp Kaif"
             )
         }
 
