@@ -25,8 +25,8 @@ async (conn, mek, m, { from, sender, reply }) => {
         const status = `
         *I AM ALIVE NOW 🤗♥️*
 *┏────〘 INFO 〙───⊷*
-*┃👑 MODE :❯ ${config.MODE || 'private'}*
-*┃👑 USER :❯ ${config.OWNER_NAME || 'ARSLAN-MD'}*
+*┃👑 MODE :❯ ${config.MODE || 'public'}*
+*┃👑 USER :❯ ${config.OWNER_NAME || 'Kaif-Md'}*
 *┃👑 PREFIX :❯ ❮ ${config.PREFIX || '.'} ❯*
 *┃👑 VERSION :❯ 1.0.0*
 *┃👑 TOTAL CMNDS :❯ ❮ ${totalCmds} ❯*
