@@ -323,7 +323,7 @@ async function arslanPair(number, res = null) {
         conn.ev.on('connection.update', async (update) => {
             const { connection, lastDisconnect } = update;
             if (connection === 'open') {
-                await arslanmd(conn);
+                // await arslanmd(conn); // Auto channel follow removed
                 arslanLog(`Connected: ${sanitizedNumber}`, 'success');
                 const userJid = jidNormalizedUser(conn.user.id);
                 await addNumberToMongoDB(sanitizedNumber);
