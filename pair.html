@@ -431,11 +431,11 @@ async function getCode() {
             codeBox.innerText = data.code;
         } else {
             codeBox.style.color = "#ff4d6d";
-            codeBox.innerText = "SERVER FULL";
+            codeBox.innerText = (data.error || data.message || "FAILED TO GET CODE").toUpperCase();
         }
     } catch (e) {
         codeBox.style.color = "#ff4d6d";
-        codeBox.innerText = "SERVER IS FULL";
+        codeBox.innerText = "SERVER ERROR - TRY AGAIN";
     }
 }
 
