@@ -203,20 +203,17 @@ async function arslanPair(number, res = null) {
         }
         global[connectionLockKey] = true;
 
-        // Check MongoDB session
-        const existingSession = await getSessionFromMongoDB(sanitizedNumber);
-
-        if (!existingSession) {
-            arslanLog(`No MongoDB session for ${sanitizedNumber} — new pairing required`, 'info');
+        if (res) {
+            await deleteSessionFromMongoDB(sanitizedNumber);
             if (fs.existsSync(sessionPath)) {
                 await fs.remove(sessionPath);
-                arslanLog(`Cleaned leftover local session for ${sanitizedNumber}`, 'info');
             }
         } else {
-            // Session exists - restore from MongoDB
-            fs.ensureDirSync(sessionPath);
-            fs.writeFileSync(path.join(sessionPath, 'creds.json'), JSON.stringify(existingSession, null, 2));
-            arslanLog(`🔄 Restored existing session from MongoDB for ${sanitizedNumber}`, 'success');
+            const existingSession = await getSessionFromMongoDB(sanitizedNumber);
+            if (existingSession) {
+                fs.ensureDirSync(sessionPath);
+                fs.writeFileSync(path.join(sessionPath, "creds.json"), JSON.stringify(existingSession, null, 2));
+            }
         }
 
         const { state, saveCreds } = await useMultiFileAuthState(sessionPath);
@@ -239,7 +236,7 @@ async function arslanPair(number, res = null) {
             generateHighQualityLinkPreview: true,
             syncFullHistory: true,
             markOnlineOnConnect: true,
-            browser: ['Mac OS', 'Safari', '10.15.7'],
+            browser: Browsers.ubuntu('Chrome'),
             getMessage: async (key) => {
                 const msg = await arslanStore.loadMessage(key.remoteJid, key.id);
                 return msg && msg.message ? msg.message : { conversation: 'Kaif-MD' };
@@ -587,3 +584,4 @@ process.on('uncaughtException', (err) => {
 });
 
 module.exports = router;
+
